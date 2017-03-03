@@ -1,0 +1,182 @@
+[
+  {
+    "id": "ROG-GX800VH-7th-Gen-Intel-Core",
+    "name": "ROG GX800VH (7th Gen Intel Core)",
+    "short_name": "ROG GX800VH",
+    "description": "The most powerful gaming laptop – the GX800",
+    "image_url": "/assets/img-500/cLFIwctdK2zIoThm.png",
+    "display_size": "18.4\"",
+    "price": 1000
+  },
+  {
+    "id": "ROG-G701VI-7th-Gen-Intel-Core",
+    "name": "ROG G701VI (7th Gen Intel Core)",
+    "short_name": "ROG G701VI",
+    "description": "The most powerful gaming laptop with unlocked Intel 7th-gen processor and NVIDIA GeForce GTX 1080 GPU – the G701",
+    "image_url": "/assets/img-500/ztMj51lsFVthDB7P.png",
+    "display_size": "17.3\"",
+    "price": 1000
+  },
+  {
+    "id": "ROG-GL753VD",
+    "name": "ROG GL753VD",
+    "short_name": "ROG GL753VD",
+    "description": "Gaming Without Limits – ROG Strix GL753",
+    "image_url": "/assets/img-500/tXt2Use0izJ9VxVy.png",
+    "display_size": "17.3\"",
+    "price": 1000
+  },
+  {
+    "id": "ROG-GL753VE",
+    "name": "ROG GL753VE",
+    "short_name": "ROG GL753VE",
+    "description": "Gaming Without Limits – ROG Strix GL753",
+    "image_url": "/assets/img-500/WI35Fr6kHcVWIJ7o.png",
+    "display_size": "17.3\"",
+    "price": 1000
+  },
+  {
+    "id": "ROG-GL552VX-7th-Gen-Intel-Core",
+    "name": "ROG GL552VX  (7th Gen Intel Core)",
+    "short_name": "ROG GL552VX",
+    "description": "ROG Strix GL553 comes with Windows 10 pre-installed and features a 7th-generation Intel® Core™ i7 quad-core processor, NVIDIA® GeForce® GTX 1050 graphics and full Microsoft® DirectX® 12 support to give you powerful performance and flawless gaming visuals.",
+    "image_url": "/assets/img-500/qZHxp0enNqWJBcDg.png",
+    "display_size": "15.6\"",
+    "price": 1000
+  },
+  {
+    "id": "ROG-GL553VD",
+    "name": "ROG GL553VD",
+    "short_name": "ROG GL553VD",
+    "description": "Gaming Without Limits – ROG Strix GL553",
+    "image_url": "/assets/img-500/AnpBtRKze8FjApcm.png",
+    "display_size": "15.6\"",
+    "price": 1000
+  },
+  {
+    "id": "ROG-GL553VE",
+    "name": "ROG GL553VE",
+    "short_name": "ROG GL553VE",
+    "description": "Gaming Without Limits – ROG Strix GL553",
+    "image_url": "/assets/img-500/mhTbsgvqzVP8ruaj.png",
+    "display_size": "15.6\"",
+    "price": 1000
+  },
+  {
+    "id": "ROG-GL702VM-7th-Gen-Intel-Core",
+    "name": "ROG GL702VM  (7th Gen Intel Core)",
+    "short_name": "ROG GL702VM",
+    "description": "ROG Strix GL702 enables users to enjoy high-end gaming from anywhere.",
+    "image_url": "/assets/img-500/WlSoiHKyvyk8Xuas.png",
+    "display_size": "17.3\"",
+    "price": 1000
+  },
+  {
+    "id": "ROG-GL702VS",
+    "name": "ROG GL702VS",
+    "short_name": "ROG GL702VS",
+    "description": "ROG Strix GL702 enables users to enjoy high-end gaming from anywhere.",
+    "image_url": "/assets/img-500/KyQpqYkXq41zi7RI.png",
+    "display_size": "17.3\"",
+    "price": 1000
+  },
+  {
+    "id": "ROG-GL502VM-7th-Gen-Intel-Core",
+    "name": "ROG GL502VM  (7th Gen Intel Core)",
+    "short_name": "ROG GL502VM",
+    "description": "",
+    "image_url": "/assets/img-500/AKlM57EfLcqOGiAN.png",
+    "display_size": "15.6\"",
+    "price": 1000
+  },
+  {
+    "id": "ROG-GL502VS-7th-Gen-Intel-Core",
+    "name": "ROG GL502VS  (7th Gen Intel Core)",
+    "short_name": "ROG GL502VS",
+    "description": "ROG Strix GL502 enables users to enjoy high-end gaming from anywhere.",
+    "image_url": "/assets/img-500/eaPJnFEloSqefkMn.png",
+    "display_size": "15.6\"",
+    "price": 1000
+  },
+  {
+    "id": "ROG-G752VS-7th-Gen-Intel-Core",
+    "name": "ROG G752VS  (7th Gen Intel Core)",
+    "short_name": "ROG G752VS",
+    "description": "The most powerful gaming laptop with Intel 7th-gen processor and NVIDIA GeForce GTX 1070 GPU – the G752\t\t",
+    "image_url": "/assets/img-500/ynhghQheIurIuE4Z.png",
+    "display_size": "17.3\"",
+    "price": 1000
+  },
+  {
+    "id": "ROG-G752VS-OC-Edition-7th-Gen-Intel-Core",
+    "name": "ROG G752VS OC Edition",
+    "short_name": "ROG G752VS OC Edition",
+    "description": "The most powerful gaming laptop with unlocked Intel 7th-gen processor and NVIDIA GeForce GTX 1070 GPU – the G752VS OC Edition",
+    "image_url": "/assets/img-500/IJJ4SjZxMrWVZPMw.png",
+    "display_size": "17.3\"",
+    "price": 1000
+  },
+  {
+    "id": "ROG-G701VI",
+    "name": "ROG G701VI",
+    "short_name": "ROG G701VI",
+    "description": "The most powerful gaming laptop with NVIDIA GeForce GTX 1080 – the G701",
+    "image_url": "/assets/img-500/7DuDoZ4CJCA3U5t4.png",
+    "display_size": "17.3\"",
+    "price": 1000
+  },
+  {
+    "id": "ROG-GL553VW",
+    "name": "ROG GL553VW",
+    "short_name": "ROG GL553VW",
+    "description": "Gaming Without Limits – ROG Strix GL553",
+    "image_url": "/assets/img-500/FCoTP6AD4OLsS5vl.png",
+    "display_size": "15.6\"",
+    "price": 1000
+  },
+  {
+    "id": "ROG-G771JW",
+    "name": "ROG G771JW",
+    "short_name": "ROG G771JW",
+    "description": "Unleashed Power to Redefine Gaming",
+    "image_url": "/assets/img-500/mB5htjJbRuQ8GSj3.png",
+    "display_size": "17.3\"",
+    "price": 1000
+  },
+  {
+    "id": "ROG-GL702VM",
+    "name": "ROG GL702VM",
+    "short_name": "ROG GL702VM",
+    "description": "Compact and Potent",
+    "image_url": "/assets/img-500/And0kom3y45pZcVP.png",
+    "display_size": "17.3\"",
+    "price": 1000
+  },
+  {
+    "id": "ROG-G752VM",
+    "name": "ROG G752VM",
+    "short_name": "ROG G752VM",
+    "description": "The most powerful gaming laptop with NVIDIA GeForce GTX 1060 – the G752",
+    "image_url": "/assets/img-500/tZ2Ed2uHyXKT3UFX.png",
+    "display_size": "17.3\"",
+    "price": 1000
+  },
+  {
+    "id": "ROG-G752VS",
+    "name": "ROG G752VS",
+    "short_name": "ROG G752VS",
+    "description": "The most powerful gaming laptop with NVIDIA GeForce GTX 1070 – the G752",
+    "image_url": "/assets/img-500/aKtE6ThoPdoHIZxk.png",
+    "display_size": "17.3\"",
+    "price": 1000
+  },
+  {
+    "id": "ROG-G800VI",
+    "name": "ROG G800VI",
+    "short_name": "ROG G800VI",
+    "description": "The all-conquering gaming laptop – ROG G800 – with cutting-edge NVIDIA® GeForce® GTX 1080 graphics, is all about performance. ",
+    "image_url": "/assets/img-500/qgX7Ft82c1Jr28Ly.png",
+    "display_size": "18.4\"",
+    "price": 1000
+  }
+]
