@@ -16,7 +16,7 @@ import {CutAfterPipe} from './pipes/cut-after/cut-after.pipe';
 import {ItemListComponent} from './components/item-list/item-list.component';
 import {PriceInfoComponent} from './components/cart/price-info/price-info.component';
 
-// import 'hammejs';
+import 'hammerjs';
 
 @NgModule({
     declarations: [

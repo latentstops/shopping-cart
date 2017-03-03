@@ -1,9 +1,7 @@
 import {Component, OnInit, Input} from '@angular/core';
 import {CartService} from "../../services/cart/cart.service";
-import {ItemService} from "../../services/item/item.service";
 import {Item} from "../../models/item";
 import {MdSnackBar} from "@angular/material";
-import {ItemCartNotificationComponent} from "./item-cart-notification/item-cart-notification.component";
 
 @Component({
     selector: 'app-item',
