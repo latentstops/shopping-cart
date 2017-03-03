@@ -11,11 +11,12 @@ import {CartComponent} from './components/cart/cart.component';
 
 import {CartService} from "./services/cart/cart.service";
 import {ItemService} from "./services/item/item.service";
-import { ItemComponent } from './components/item/item.component';
-import { CutAfterPipe } from './pipes/cut-after/cut-after.pipe';
-import { ItemCartNotificationComponent } from './components/item/item-cart-notification/item-cart-notification.component';
-import { ItemListComponent } from './components/item-list/item-list.component';
-import { PriceInfoComponent } from './components/cart/price-info/price-info.component';
+import {ItemComponent} from './components/item/item.component';
+import {CutAfterPipe} from './pipes/cut-after/cut-after.pipe';
+import {ItemListComponent} from './components/item-list/item-list.component';
+import {PriceInfoComponent} from './components/cart/price-info/price-info.component';
+
+// import 'hammejs';
 
 @NgModule({
     declarations: [
@@ -24,7 +25,6 @@ import { PriceInfoComponent } from './components/cart/price-info/price-info.comp
         CartComponent,
         ItemComponent,
         CutAfterPipe,
-        ItemCartNotificationComponent,
         ItemListComponent,
         PriceInfoComponent
     ],
@@ -37,6 +37,7 @@ import { PriceInfoComponent } from './components/cart/price-info/price-info.comp
     ],
     providers: [CartService, ItemService],
     bootstrap: [AppComponent],
-    entryComponents: [ItemCartNotificationComponent]
+    entryComponents: []
 })
-export class AppModule {}
+export class AppModule {
+}

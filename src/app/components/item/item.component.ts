@@ -39,14 +39,15 @@ export class ItemComponent implements OnInit {
     onChange(e){
 
         let isChecked = this.item.is_added = e.checked;
+        let isNotChecked = !isChecked;
 
-         isChecked && this.addToCart(this.item);
-        !isChecked && this.removeFromCart(this.item);
+        isChecked && this.addToCart(this.item);
+        isNotChecked && this.removeFromCart(this.item);
 
-        let message = isChecked ? `Added` : 'Removed';
+        let message = isChecked ? 'Added' : 'Removed';
 
         this.snackBar.open( this.item.short_name, message,  {
-            duration: 500
+            duration: 800
         } );
 
     }

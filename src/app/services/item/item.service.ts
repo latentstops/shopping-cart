@@ -31,16 +31,16 @@ export class ItemService {
     requestForItems(){
 
         return this.http
-            .get( this.endpoint )
-            .map( r => {
+            .get(this.endpoint)
+            .map(r => {
 
                 let itemsJSON = r.json();
 
-                this.cartService.getItems().forEach( item => {
+                this.cartService.getItems().forEach(item => {
 
                     let index = itemsJSON.findIndex(itemJSON => itemJSON.id == item.id);
 
-                    if(index == -1) return;
+                    if (index == -1) return;
 
                     itemsJSON[index] = item;
 

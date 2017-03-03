@@ -13,6 +13,6 @@ export class PriceInfoComponent implements OnInit {
 
     ngOnInit() {}
 
-    @Input() cartItems;
+    @Input() items;
 
 }
