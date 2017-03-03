@@ -1,0 +1,25 @@
+<ng-container *ngFor="let item of items; let i = index;">
+
+  <div *ngIf="i % 4 == 0" class="row">
+
+    <div class="col-md-2"></div>
+    <div class="col-md-2" >
+      <app-item [deletable]="deletable" [item]="items[i]"></app-item>
+    </div>
+
+    <div class="col-md-2" >
+      <app-item [deletable]="deletable" [item]="items[i + 1]"></app-item>
+    </div>
+
+    <div class="col-md-2" >
+      <app-item [deletable]="deletable" [item]="items[i + 2]"></app-item>
+    </div>
+
+    <div class="col-md-2" >
+      <app-item [deletable]="deletable" [item]="items[i + 3]"></app-item>
+    </div>
+    <div class="col-md-2"></div>
+
+  </div>
+  <br>
+</ng-container>

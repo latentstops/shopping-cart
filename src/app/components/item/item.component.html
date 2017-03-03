@@ -1,0 +1,53 @@
+<md-card class="example-card"  *ngIf="item">
+
+    <md-card-header>
+        <div md-card-avatar class="example-header-image"></div>
+        <md-card-title>{{ item.short_name }}</md-card-title>
+        <md-card-subtitle>{{item.display_size}}</md-card-subtitle>
+    </md-card-header>
+
+    <img md-card-image [src]="item.image_url">
+
+    <md-card-content>
+
+        <div class="example-tooltip-host" mdTooltip="{{ item.description.length > 55 ? item.description: ''}}" [mdTooltipPosition]="'above'">
+            <span>{{ item.description | cutAfter: 55 }}</span>
+            <br><br>
+            <span> {{ item.price }} $</span>
+        </div>
+
+    </md-card-content>
+
+    <md-card-actions *ngIf="!deletable">
+
+            <md-checkbox *ngIf="!deletable"
+                         class="example-margin"
+                         [(ngModel)]="item.is_added"
+                         (change)="onChange($event)">
+                Add to cart
+            </md-checkbox>
+
+    </md-card-actions>
+
+    <md-card-actions *ngIf="deletable">
+
+
+
+        <button
+                md-button
+                (click)="removeFromCart(item)">
+            <md-icon>delete</md-icon>
+        </button>
+
+        <md-input-container class="example-margin">
+            <input mdInput
+                   type="number"
+                   placeholder="Count"
+                   minlength="1" maxlength="10"
+                   (ngModelChange)="onCountChange($event)"
+                   [(ngModel)]="item.count">
+        </md-input-container>
+
+    </md-card-actions>
+
+</md-card>
