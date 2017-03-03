@@ -7,7 +7,7 @@ import {CartService} from "../cart/cart.service";
 @Injectable()
 export class ItemService {
 
-    private endpoint: string = 'http://localhost:4200/assets/laptops.json';
+    private endpoint: string = '/assets/laptops.json';
     private items:Item[] = [];
 
     constructor(
