@@ -8,33 +8,11 @@ import {CartService} from "../../../services/cart/cart.service";
 })
 export class PriceInfoComponent implements OnInit {
 
-    private _cartItems;
-    totalBalance;
-
     constructor( public cartService:CartService ) {
     }
 
-    ngOnInit() {
-    }
+    ngOnInit() {}
 
-    @Input()
-    set cartItems(val) {
-
-        this._cartItems = val;
-        this.calculateTotalBalance();
-
-    };
-
-    get cartItems() {
-
-        return this._cartItems;
-
-    };
-
-    calculateTotalBalance(){
-
-        this.totalBalance = this._cartItems.map((item) => +item.price || 0).reduce( ( p, n ) => p + n );
-
-    }
+    @Input() cartItems;
 
 }

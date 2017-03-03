@@ -18,10 +18,6 @@ export class ItemComponent implements OnInit {
     ) {
     }
 
-    openSnackBar() {
-
-    }
-
     ngOnInit() {
     }
 

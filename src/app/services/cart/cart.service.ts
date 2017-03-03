@@ -81,7 +81,6 @@ export class CartService {
     calculateTotalBalance(){
 
         this.totalBalance = 0;
-        // this.totalBalance = this.items.map((item) => +item.price || 0).reduce( ( p, n ) => p + n );
 
         this.items.forEach( ( item ) => {
 
