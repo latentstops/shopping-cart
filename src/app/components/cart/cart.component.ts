@@ -1,25 +1,22 @@
-import {Component, OnInit, AfterViewInit} from '@angular/core';
-import {CartService} from "../../services/cart/cart.service";
-import {ItemService} from "../../services/item/item.service";
+import { Component, OnInit } from '@angular/core';
+import { CartService } from '../../services/cart/cart.service';
+import { ItemService } from '../../services/item/item.service';
 
-@Component({
-    selector: 'app-cart',
-    templateUrl: 'cart.component.html',
-    styleUrls: ['cart.component.css']
-})
+@Component( {
+  selector: 'app-cart',
+  templateUrl: './cart.component.html'
+} )
 export class CartComponent implements OnInit {
 
-    items = [];
+  items = [];
 
-    constructor(
-        private cartService: CartService
-    ) {
-    }
+  constructor( private cartService: CartService ) {
+  }
 
-    ngOnInit() {
+  ngOnInit() {
 
-        this.items = this.cartService.getItems();
+    this.items = this.cartService.getItems();
 
-    }
+  }
 
 }

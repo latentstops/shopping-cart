@@ -1,10 +1,8 @@
-import {Component, OnInit, Input} from '@angular/core';
-import {ItemService} from "../../services/item/item.service";
+import {Component, Input} from '@angular/core';
 
 @Component({
     selector: 'app-item-list',
-    templateUrl: './item-list.component.html',
-    styleUrls: ['./item-list.component.css']
+    templateUrl: './item-list.component.html'
 })
 export class ItemListComponent {
 

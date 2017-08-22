@@ -10,7 +10,9 @@
 
     <md-card-content>
 
-        <div class="example-tooltip-host" mdTooltip="{{ item.description.length > 55 ? item.description: ''}}" [mdTooltipPosition]="'above'">
+        <div class="example-tooltip-host"
+             mdTooltip="{{ item.description.length > 55 ? item.description: ''}}"
+             [mdTooltipPosition]="'above'">
             <span>{{ item.description | cutAfter: 55 }}</span>
             <br><br>
             <span> {{ item.price }} $</span>
@@ -33,8 +35,7 @@
 
 
 
-        <button
-                md-button
+        <button md-button
                 (click)="removeFromCart(item)">
             <md-icon>delete</md-icon>
         </button>

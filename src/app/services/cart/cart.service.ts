@@ -1,95 +1,96 @@
-import {Injectable} from '@angular/core';
+import { Injectable } from '@angular/core';
 
 @Injectable()
 export class CartService {
 
-    items = this.tryParseAndSafelyReturn();
-    totalBalance = 0;
+  items = this.tryParseAndSafelyReturn();
+  totalBalance = 0;
 
-    constructor() {
-        this.initItems();
-        this.calculateTotalBalance();
+  constructor() {
+    this.initItems();
+    this.calculateTotalBalance();
+  }
+
+  initItems() {
+
+    this.items = this.tryParseAndSafelyReturn();
+
+  }
+
+  tryParseAndSafelyReturn() {
+
+    const itemsInStorageAsString = localStorage.getItem( 'items' ) || '[]';
+
+    let itemsInStorage = [];
+
+    try {
+      itemsInStorage = JSON.parse( itemsInStorageAsString ) || [];
+    } catch ( e ) {
+      localStorage.setItem( 'items', '[]' );
     }
 
-    initItems(){
+    return itemsInStorage;
+  }
 
-        this.items = this.tryParseAndSafelyReturn();
+  saveInStorage() {
 
+    localStorage.setItem( 'items', JSON.stringify( this.items ) );
+
+  }
+
+  getItems() {
+
+    return this.items;
+
+  }
+
+  add( item ) {
+
+    const index = this.findIndex( item );
+
+    if ( index === -1 ) {
+
+      item.count = 1;
+
+      this.items.push( item );
     }
 
-    tryParseAndSafelyReturn(){
+    this.saveInStorage();
+    this.calculateTotalBalance();
+  }
 
-        let itemsInStorageAsString = localStorage.getItem('items') || '[]';
+  remove( item ) {
 
-        let itemsInStorage = [];
+    const index = this.findIndex( item );
 
-        try {
-            itemsInStorage = JSON.parse(itemsInStorageAsString) || [];
-        }catch (e){
-            localStorage.setItem('items', '[]');
-        }
+    item.is_added = false;
 
-        return itemsInStorage;
-    }
+    this.items.splice( index, 1 );
 
-    saveInStorage(){
+    this.saveInStorage();
+    this.calculateTotalBalance();
 
-        localStorage.setItem('items', JSON.stringify(this.items));
+  }
 
-    }
+  private findIndex( item ) {
 
-    getItems(){
+    return this.items.findIndex( i => i.id === item.id );
 
-        return this.items;
+  }
 
-    }
+  calculateTotalBalance() {
 
-    add( item ){
+    this.totalBalance = this.items.reduce( ( acc, item ) => {
 
-        let index = this.findIndex(item);
+      const price = +item.price || 0;
+      const count = +item.count || 0;
+      acc += price * count;
+      return acc;
 
-        if(index == -1) {
+    }, 0 );
 
-            item.count = 1;
+    return this.totalBalance;
 
-            this.items.push(item);
-        }
-
-        this.saveInStorage();
-        this.calculateTotalBalance();
-    }
-
-    remove( item ){
-
-        let index = this.findIndex(item);
-
-        item.is_added = false;
-
-        this.items.splice(index, 1);
-
-        this.saveInStorage();
-        this.calculateTotalBalance();
-
-    }
-
-    private findIndex(item){
-
-        return this.items.findIndex( i => i.id == item.id);
-
-    }
-
-    calculateTotalBalance(){
-
-        this.totalBalance = 0;
-
-        this.items.forEach( ( item ) => {
-
-            this.totalBalance += ( +item.price || 0) * ( +item.count || 0 );
-
-        } );
-
-        return this.totalBalance;
-
-    }
+  }
 
 }
