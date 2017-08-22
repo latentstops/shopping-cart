@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import { Item } from '../../models/item';
 import { Observable } from 'rxjs';
+
+import { Item } from '../../models/item';
 import { CartService } from '../cart/cart.service';
 
 @Injectable()
